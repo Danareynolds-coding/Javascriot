@@ -43,6 +43,19 @@ console.log(numthree); //*7
 numthree*= 3;
 console.log(numthree); //*21
 
+// constructor function
+class Person {
+    constructor(firstname, lastname, dob) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.dob = dob;
+        this.getBirthYear = function () {
+            ;
+        };
+    }
+}
+
+   
 
 
 
