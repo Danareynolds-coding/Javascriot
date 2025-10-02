@@ -1,0 +1,19 @@
+.body{
+    text-align: left;
+}
+.fields{
+    margin: 10px 10px 10px 5px;
+   
+}
+.fields:before{
+    content:"$";
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-color: blue;
+    padding: 10px;
+    color:black;
+   
+}

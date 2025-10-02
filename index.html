@@ -9,8 +9,16 @@
 </head>
 <body>
     <Header>
-        <h1>Hello World</h1>
+        <h1>Tip Splitter</h1>
+    
     </Header>
+    <form id="tip">
+        <lable for="bill">Total Bill</lable>
+        <div class='fields'>
+            <input type="text"  onblur="formatCurrency(this)"
+            required data-type="number" />
+        </div>
+    </form>
     
 </body>
 <script type="text/javascript" src="./JS/app.js"></script>

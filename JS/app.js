@@ -1,15 +1,15 @@
-// legacy variable keyword
+/*// legacy variable keyword
 var age = 24;
 // blocked scoped variable
 let name = "michelle";
 //const keeps variable the same it doesn't need to be changed
 const isStudent = false;
 // primitive data types
-let tempature=98.6;   //*number       
-let greeting="hello"; //*string
-let IsLoggedin=false; //*Boolean
-let emptyvalue = null; //*null
-let notDefined; //*undefined
+let tempature=98.6;        
+let greeting="hello";
+let IsLoggedin=false; 
+let emptyvalue = null; 
+let notDefined; 
 // basic setup for sending data to html- consol.log
 console.log("hey  trey")
 console.log(name);
@@ -18,30 +18,30 @@ console.log(IsLoggedin);
 let one = 10;
 let two = 3;
 let sum =one+two;
-console.log(sum); //*13
+console.log(sum);
 let difference = one-two;
-console.log(difference);//*7
+console.log(difference);
 let product = one*two;
 console.log(product);
 let quotient = one/two;
 console.log(quotient); //3.3333335
 let remainder = one % two;
-console.log(remainder) //*1
+console.log(remainder)
 
 // increment and decrement
-one++ //*11 
+one++ 
 // same as  one = one + 1
 console.log(one);
 one-- 
-console.log(one) //*10
+console.log(one) 
 
 // assignment Opperators
 let numthree = 5;
 numthree = numthree +2;
 // same as numthree +=2;
-console.log(numthree); //*7
+console.log(numthree); 
 numthree*= 3;
-console.log(numthree); //*21
+console.log(numthree); 
 //switch statement
 function switchOfStuff(val){
     var answer="";
@@ -226,3 +226,22 @@ function multiplyAll(arr) {
     }
 let multiply = multiplyAll([[1,2], [3,4],[5,6,7,]]);
 console.log(multiply);
+*/
+
+//create tip splitter//
+function formatCurrency(inputElement){
+    let value = input.value;
+    value =value.replace(/[0-9]/g, "" );
+    const parts = value.split('.');
+    if (parts.length >2){
+        value = parts[0]+'.'+ parts.slice(1).join('');
+    }
+        let numericValue = parceFloat(value);
+        if (isNaN(numericValue)){
+            numericValue =0;
+      }
+      inputElement.value ='$' + numericValue.toFixed(2);
+    };
+
+
+
